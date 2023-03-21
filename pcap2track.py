@@ -87,12 +87,12 @@ def main():
             y_position -= y_offset
 
             if button_state != last_button_state:
-                last_button_state = button_state
                 if len(x_values) > 1:
                     color = colormap[last_button_state]
                     ax.plot(x_values, y_values, color=color)
                     x_values = [x_values[-1]]
                     y_values = [y_values[-1]]
+                last_button_state = button_state
 
             # 筛选符合条件的按钮状态
             if button_state & args.button_mask or (args.button_mask & 0b1000 and not button_state):
