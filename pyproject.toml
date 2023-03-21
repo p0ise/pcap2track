@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pcap2track"
+version = "0.1.0"
+description = "pcap2track is a command-line tool written in Python, which is used to parse mouse pcapng format traffic packets and restore mouse movement trajectories."
+authors = ["p0ise <changelf@163.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
